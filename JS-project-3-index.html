@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quote Generator</title>
+    <link href="JS-project-3-style.css" rel="stylesheet" type="text/css" />
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Attachment msdt:dt="string">1</mso:Attachment>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+
+  
+  <body>
+
+    <header>
+      <div class="flexbox head-container">
+        <div class="title-container">
+            <a href="#">
+                <h1 class="title">Quote Generator</h1>
+            </a>
+        </div>
+          
+        <div class="divider"></div>
+        
+        <div class="menu-container">
+          <button class="dropbtn" onclick="dropdown(0)"><img src="https://icon-library.com/images/three-bars-icon/three-bars-icon-6.jpg" alt="Menu button icon" class="menu-icon" /></button>
+          <div class="dropdown-content" id="dropdown-content">
+            <a href="#" onclick="randomQuote(1)">1 quote</a>
+            <a href="#" onclick="randomQuote(2)">2 quotes</a>
+            <a href="#" onclick="randomQuote(3)">3 quotes</a>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div class="under-head" ></div>
+
+
+
+
+
+  <main onclick="dropdown(2)">
+    <article class="intro-article" style="display: flex; flex-direction: column; justify-content: space-around;">
+      <h1 style="margin-top: 0;" class="center" id="name"></h1>
+    </article>
+
+
+    
+    <article class="flexbox main-article">
+      <div class="div-1">
+        <div style="width: 27vw; height: 100%; margin: 0 1.4vw;">
+          <h3 class="center">Hey you, do you like quotes? Here you can hit a button and get free quotes!</h3>
+          <h3>To use this website, hit the button and it will prompt you with how many quotes you want. Type in how many qutoes you want and see the quotes! We have ensured that you will never see two of the same quote at the same time.</h3>
+          <h3 class="center">You can also use the dropdown menu in the top-right corner to get quotes.</h3>
+        </div>
+      </div>
+
+      <div><div style="width: 0.2vw; height: 100%; background-color: rgba(255, 255, 255, 0.1);"></div></div>
+      
+      <div class="div-2">
+        <div class="center" style="width: 29.8vw; height: 100%; display: flex; flex-direction: column; justify-content: space-around;">
+          <button onclick="getValue()" class="quote-button"><h1>Give me quote(s)</h1></button>
+        </div>
+      </div>
+
+      <div><div style="width: 0.2vw; height: 100%; background-color: rgba(255, 255, 255, 0.1);"></div></div>
+      
+      <div class="div-3">
+        <div style="width: 36vw; height: 100%; margin: 0 2vw;">
+          <h2 id="quote-print-1">1. </h2>
+          <h2 id="quote-print-2">2. </h2>
+          <h2 id="quote-print-3">3. </h2>
+        </div>
+      </div>
+    </article>
+
+
+
+
+
+
+    
+    
+    
+  </main>
+
+
+
+
+<!-- fix me -->
+  <footer>
+    <h1 class="center" id="thank-you"></h1>
+  </footer>
+
+    
+    
+  </body>
+  <script src="JS-project-3-script.js"></script>
+</html>
